@@ -17,7 +17,7 @@ process delly_somatic {
 
 }
 
-worfkflow {
+workflow {
     // create channel
     input_ch = Channel.empty()
     tsv = file(params.input)
