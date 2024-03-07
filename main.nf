@@ -1,7 +1,7 @@
 process delly_somatic {
 
     publishDir "${params.pubdir}/results/SV_delly", mode: 'copy'
-    container: "dellytools/delly:latest"
+    container "dellytools/delly:latest"
 
     input:
         tuple val(sample), val(t_bam), val(t_bai), val(n_bam), val(n_bai)
