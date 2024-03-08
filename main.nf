@@ -7,7 +7,7 @@ process delly_somatic {
         tuple val(sample), val(t_bam), val(t_bai), val(n_bam), val(n_bai)
     
     output:
-        path '.'
+        path '*'
 
     // sample here is a string -> tumorID_normalID
     shell:
